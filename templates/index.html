@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EstateBox</title>
+        <link rel="stylesheet" href="static\css\bootstrap.css">
+
+        <!-- Enlace a los estilos de AOS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+        <link rel="icon" type="image/x-icon" href="static\iconos\faviconC.png">
+        <link rel="stylesheet" href="static\css\estilos.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Logo, Login y Bienvenida -->
+        <div class="row" data-aos="fade-down" data-aos-delay="10">
+            <div class="col-md-12 content-item item1" style="background-image: url('static/imagenes/bg_header01.png');">
+                <div class="row">
+                    <div class="col-md-12 titulo-cabecera" style="padding-top: 10px; padding-right: 10px;">
+                        <div class="row titulo-logo">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <img src="static\iconos\estatebox_logoColor.svg" alt="logo" width="250px" style="padding-top: 20px; padding-bottom: 15px; float: center; ">
+                            </div>
+                        </div>
+                        <div class="row titulo-bienvenido">
+                            <div class="col-4"></div>
+                            <div class="col-8" style="align-content: center; float: center;">
+                                <h1 class="display-4">¡Bienvenido a <strong>EstateBox!</strong></h1>
+                                <hr class="my-1">
+                                <p class="display-7">Presentamos la nueva y más eficiente manera de gestionar todos tus activos inmobiliarios.</p>
+                                <div class="d-flex justify-content-center" style="padding-top: 25px;">
+                                    <a href="http://datamarket.bmi.cl/databox/" class="btn btniniciar-sesion btn-lg" target="_blank" role="button" aria-pressed="false" style="margin-right: 20px;">Iniciar Sesión</a>
+                                    <a href="http://datamarket.bmi.cl/databox/" class="btn btniniciar-demo btn-lg" target="_blank" role="button" aria-pressed="false" style="margin-left: 20px;">Ir a Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carrusel Capturas -->
+        <div class="row">
+            <div class="col-md-12 content-item item3" data-aos="fade-up" data-aos-delay="50">
+                <div class="carousel-container">
+                    <div id="carruselPrinc" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner"> 
+                            <div class="carousel-item active">
+                                <img class="p-3 mb-5 rounded-square shadow" style="border-radius: 30px;" src="static\imagenes\estatebox_home.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="p-3 mb-5 rounded-square shadow" style="border-radius: 30px;" src="static\imagenes\estatebox_resumen.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="p-3 mb-5 rounded-square shadow" style="border-radius: 30px;" src="static\imagenes\estatebox_nuevo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Porque EstateBox -->
+        <div class="custom-section"> <!-- Item 3.1 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="carousel-container" data-aos="fade-up" data-aos-delay="100">
+                            <div id="carruselSec" class="carousel slide carousel-fade" data-ride="carouselData">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="rounded-square" style="border-radius: 20px;" src="static\imagenes\organiza.jpeg">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="rounded-square" style="border-radius: 20px;" src="static\imagenes\administra.jpg">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="rounded-square" style="border-radius: 20px;" src="static\imagenes\optimiza.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">                    
+                        <div class="card porque-databox mb-3 flex-column justify-content-center">
+                            <div class="card-header bg-transparent">
+                                <p class="h1">¿Por qué EstateBox?</p>
+                            </div>
+                            <div class="card-body bg-transparent">
+                                <p class="card-text"><h5 style="text-align: justify;">Con EstateBox, podrás administrar fácilmente tu cartera de propiedades, asegurando el cumplimiento legal y el vencimiento de plazos de manera oportuna. Su interfaz intuitiva te permite geolocalizar cada activo, brindándote información valiosa al alcance de tu mano. Organiza y almacena de manera fluida documentos e imágenes esenciales de cada activo, incluyendo tasaciones, valores, detalles de terrenos y usos de estos. Con EstateBox, desbloquea el potencial completo de tus inversiones inmobiliarias y optimiza tus operaciones como nunca antes.</h5></p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <h1 class="display-6">Con EstateBox, <strong>Organiza, Administra y Optimiza.</strong></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Podras con -->
+        <section class="site-section border-bottom caractSeccion">
+            <div class="container text-white">
+                <div class="row mb-5">
+                    <div class="col-12 text-center aos-init aos-animate" data-aos="fade-up">
+                        <h2 class="section-title mb-3" style="padding-top: 40px; padding-left: 40px; text-align: left;"><strong>Con EstateBox podrás</strong></h2>
+                    </div>
+                </div>
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\controlActivos.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Toma el Control</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Accede en línea a un detallado listado de tus activos inmobiliarios. Obtén información precisa sobre propiedades, ubicaciones y características.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\mapeoInfo.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Mapeo en Linea</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Explora en línea el mapeo completo de todos tus activos. Visualiza de forma detallada la ubicación y distribución geográfica de tus recursos, incluyendo propiedades, infraestructuras y otros bienes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\reportes.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Informes</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Descarga fácilmente informes de tasación en línea. Obtén evaluaciones detalladas y precisas de tus activos inmobiliarios con datos actualizados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\repoActivos.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Repositorios por Activos</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Organiza un completo repositorio en línea para cada uno de tus inmuebles, que incluye diversos certificados y documentos importantes. Almacena de manera segura planchetas, títulos, topografías, tasaciones anteriores, hipotecas y gravámenes asociados a cada propiedad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\gestionComercial.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Control Comercial</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Lleva un control eficiente de rentas, contratos y valores inmobiliarios. Genera rápidamente reportes de fácil lectura que incluyan información sobre el total de activos, valor de la cartera, tipos de activos, entre otros datos relevantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 aos-init aos-animate" data-aos="fade-up">
+                        <div class="card">
+                            <img src="static\iconos\alarmas.png" class="card-img-top img-fluid w-25 mx-auto mt-4 text-white" alt="Icono de Control de Activos">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"><strong>Notificaciones Personalizadas</strong></h4>
+                                <p class="card-text" style="text-align: justify;">Crea alarmas personalizadas para recordarte actualizaciones de tasaciones, pagos de contribuciones y términos de contratos de arriendo. Establece parámetros específicos para cada recordatorio, asegurando un seguimiento oportuno de tareas importantes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                
+        <!-- Planes -->
+        <section class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center aos-init aos-animate" data-aos="fade-up">
+                        <h2 class="section-title mb-3" style="padding-top: 25px; padding-left: 40px; text-align: left; "><strong>Planes de Suscripción</strong></h2>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 plan-basico aos-init aos-animate round-square" data-aos="fade-up" data-aos-delay="50">
+                        <div class="planes" style="height: 100%; border-radius: 20px;">
+                            <h2 class="text-white text-center"><strong>Básico</strong></h2>
+                            <div class="price text-center mb-4" style="padding-top: 15px;">
+                                <h2 class="texto-borde"><strong>3UF</strong></h2>
+                                <p class="h6">Fee Mensual</p>
+                            </div>
+                            <ul>
+                                <ul>
+                                    <li>Acceso a la plataforma.</li>
+                                    <li>Inducción de uso.</li>
+                                    <li>Servicio de atención.</li>
+                                    <li>Carga Gestión de los activos es por parte del cliente.</li>
+                                </ul>
+                            </ul>
+                            <p class="text-center" style="position: absolute; bottom: 25px; left: 0; right: 0; width: 100%;">
+                                <a href="#" class="btn btn-secondary">Contratar</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 plan-medio aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="planes" style="border-radius: 20px;">
+                            <h2 class="text-black text-center"><strong>Medio</strong></h2>
+                            <div class="price text-center mb-4" style="padding-top: 15px;">
+                                <h2 class="texto-borde"><strong>3UF</strong></h2>
+                                <p class="h6">Fee Mensual</p>
+                            </div>
+                            <ul>
+                                <ul>
+                                    <li>Acceso a la plataforma.</li>
+                                    <li>Inducción de uso.</li>
+                                    <li>Servicio de atención.</li>
+                                    <li>BMI se hará cargo de la primera carga de información de cada activo.</li>
+                                    <li>Posteriores cargas y gestión de los activos seran por parte del cliente.</li>
+                                    <p></p>
+                                    <li>Pago único por carga:</li>
+                                    <ul>
+                                        <li>1-20 activos: 5 UF</li>
+                                        <li>21-50 activos: 10 UF</li>
+                                        <li>51-100 activos: 15 UF</li>
+                                        <li>Sobre 100 activos: 50 UF</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Contratar</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 plan-full aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="planes" style="border-radius: 20px;">
+                            <h3 class="text-black text-center"><strong>Profesional</strong></h3>
+                            <div class="price text-center mb-4" style="padding-top: 15px;">
+                                <h2 class="texto-borde"><strong>Por Carga de Activos</strong></h2>
+                                <p class="h6">Fee Mensual</p>
+                            </div>
+                            <ul>
+                                <ul>
+                                    <li>Acceso a la plataforma.</li>
+                                    <li>Inducción de uso.</li>
+                                    <li>Servicio de atención.</li>
+                                    <li>BMI se hará cargo de la primera carga de información de cada activo.</li>
+                                    <li>BMI se hará cargo de las siguientes cargas y gestión de los activos.</li>
+                                    <p></p>
+                                    <li>Pago mensual:</li>
+                                    <ul>
+                                        <li>1-20 activos: 5 UF</li>
+                                        <li>21-50 activos: 10 UF</li>
+                                        <li>51-100 activos: 15 UF</li>
+                                        <li>Sobre 100 activos: 50 UF</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-secondary">Contratar</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adicionales -->
+        <div class="row">
+            <div class="col-md-12 content-item item6">
+                <div class="container marketing" id="detallesTres" style="padding-top: 25px; padding-bottom: 25px; font-size: 18px;">
+                    <hr class="featurette-divider">
+                        
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2 d-flex align-items-left justify-content-center flex-column aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" style="text-align:left;" >
+                            <rect width="100%" height="100%" fill="rgba(0, 0, 0, 0.5)">
+                                <h2 class="featurette-heading">Localiza tu espacio solo con un Click.</h2>
+                                <p class="lead">Busca y selecciona un punto. Con la geolocalización, estarás a un clic de cualquier lugar de Chile y a un click de tus activos.</p>
+                            </rect> 
+                        </div>
+                        <div class="col-md-5 order-md-1 aos-init aos-animate" data-aos="fade-left" data-aos-delay="50" >
+                            <svg class="bd-placeholder-img rounded-square" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" style="border-radius: 10px;">
+                                <image xlink:href="static\imagenes\ubicacion_512.png" width="100%" height="100%" />
+                            </svg>
+                        </div>
+                    </div>
+                
+                    <hr class="featurette-divider">
+                
+                    <div class="row featurette">
+                        <div class="col-md-7 d-flex align-items-center justify-content-center flex-column aos-init aos-animate" data-aos="fade-right" data-aos-delay="300" style="text-align:right;" >
+                            <h2 class="featurette-heading fw-normal lh-1">Crea tus Activos y gestiona sus características. <span class="text-body-secondary">Simpleza y efectividad .</span></h2>
+                            <p class="lead">Crearás tus activos, agregando imágenes, documentación, características y toda la información necesaria. Todo en una interfaz simple e intuitiva que hará la navegación más fluida y efectiva, optimizando tu tiempo.</p>
+                        </div>
+                        <div class="col-md-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                            <svg class="bd-placeholder-img round-square" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" style="border-radius: 10px;">
+                                <rect width="100%" height="100%" fill="rgba(255, 255, 255, 0.0)"></rect>
+                                <image xlink:href="static\imagenes\CrearActivo_512.png" width="100%" height="100%" />
+                            </svg>
+                        </div>
+                    </div>
+                
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2 d-flex align-items-center justify-content-center flex-column aos-init aos-animate" data-aos="fade-left" data-aos-delay="400" style="text-align:left;" >
+                            <h2 class="featurette-heading fw-normal lh-1">Administra documentación legal, imágenes y estados.</h2>
+                            <p class="lead">Accede fácilmente a la documentación relevante, optimizando la gestión y garantizando la integridad de la información. Simplifica la revisión de antecedentes y facilita transacciones inmobiliarias con un repositorio centralizado y de fácil acceso.</p>
+                        </div>
+                        <div class="col-md-5 order-md-1 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" >
+                            <svg class="bd-placeholder-img round-square" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" style="border-radius: 10px;">
+                                <rect width="100%" height="100%" fill="rgba(255, 255, 255, 0.0)"></rect>
+                                <image xlink:href="static\imagenes\legales_CertRecepFinal_512.png" width="100%" height="100%" />
+                            </svg>
+                        </div>
+                    </div>
+                
+                    <hr class="featurette-divider">
+                </div>
+            </div>
+        </div>
+
+        <!-- rrss -->
+        <section class="rrss">
+            <div class="d-flex justify-content-center redes-sociales">
+                <a href="https://www.instagram.com/bmi.cl/" target="_blank">
+                    <img src="static\iconos\instagram.png" alt="" class="rounded-circle" width="50px" style="margin-right: 30px;">
+                </a>
+                <a href="https://www.linkedin.com/company/35500787/admin/" target="_blank">
+                    <img src="static\iconos\linkedin.png" alt="" class="rounded-circle" width="50px" style="margin-right: 30px;">
+                </a>
+                <a href="https://www.bmi.cl/" target="_blank">
+                    <img src="static\iconos\logo_bmi_sombra.png" alt="" width="100px">
+                </a>
+            </div>
+        </section>
+        
+        <!-- contacto -->
+        <section>
+            <div class="container">
+                <h1 class="mt-5">Contacto</h1>
+                <form method="post" action="/contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label>
+                        <input class="form-control" id="empresa" name="empresa" required></input>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" maxlength="12" oninput="formatPhoneNumber(this)">
+                    </div>
+                               
+                    <div class="form-group">
+                        <label for="planes">Motivo de Contacto:</label>
+                        <select class="form-control" id="planes" name="planes">
+                            <option value="Básico">Consulta</option>
+                            <option value="Medio">Comentario</option>
+                            <option value="Full">Sugerencia</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="static\js\bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        
+        <script>
+            AOS.init(); // Inicializa la biblioteca AOS
+        
+            $(function() {
+                $('.carousel').carousel({
+                    interval: 3000 // Cambiar el intervalo de deslizamiento en milisegundos (ejemplo: 3000 = 3 segundos)
+                });
+                $('.carouselData').carousel({
+                    interval: 4000 // Cambiar el intervalo de deslizamiento en milisegundos (ejemplo: 3000 = 3 segundos)
+                });
+            });
+
+
+            function formatPhoneNumber(input) {
+                // Elimina todos los caracteres que no sean números
+                var phoneNumber = input.value.replace(/\D/g, '');
+                
+                // Añade "+56" al principio
+                if (phoneNumber.length > 0) {
+                    phoneNumber = '+56' + phoneNumber;
+                }
+                
+                // Limita la longitud total a 11 caracteres (incluyendo "+56")
+                if (phoneNumber.length > 12) {
+                    phoneNumber = phoneNumber.slice(0, 12);
+                }
+                
+                // Asigna el número de teléfono con formato de nuevo al campo de entrada
+                input.value = phoneNumber;
+            }
+        </script>
+    </body>
+</html>
